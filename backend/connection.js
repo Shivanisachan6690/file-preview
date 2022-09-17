@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 
-const databaseName ="shivi1815"
+const databaseName ="previewgenerator"
 const url=`mongodb+srv://shivani:shivani@cluster0.eyxncbq.mongodb.net/${databaseName}?retryWrites=true&w=majority`
 
 // connect to database

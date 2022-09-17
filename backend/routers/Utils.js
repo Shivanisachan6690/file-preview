@@ -39,7 +39,7 @@ const retrieveFilePreview = (id, cb) => {
 
 }
 
-
+// to configure file save
 const storage = multer.diskStorage({   
     destination: function(req, file, cb) { 
         cb(null, './static/uploads');    
