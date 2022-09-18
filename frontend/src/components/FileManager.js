@@ -9,6 +9,18 @@ const FileManager = () => {
 
     }
 
+
+    const saveInDb = async (filename) => {
+      const res = await fetch(url+'/file/add', {
+        method: 'POST',
+        body: JSON.stringify({
+          file : filename,
+    thumbnail : "",
+    createdAt: new Date()
+        })
+      })
+    }
+
     const uploadFile = (e) => {
         const file = e.target.files[0];
         const fd = new FormData();
