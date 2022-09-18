@@ -2,6 +2,7 @@ import{BrowserRouter, Route, Routes} from"react-router-dom";
 import FileManager from "./components/FileManager";
 // import EventHandling from "./components/EventHandling";
 import Login from "./components/Login";
+import Header from "./components/Header";
 import Signup from "./components/Signup";
 // import {Toaster} from "react-hot-toast";
 function App() {
@@ -10,6 +11,7 @@ function App() {
      
       
       <BrowserRouter>
+      <Header/>
     
       <Routes>
     

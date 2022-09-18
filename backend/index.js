@@ -2,6 +2,7 @@
 
 const express = require('express');
 const userRouter= require('./routers/userRouter')
+const fileRouter= require('./routers/fileRouter')
 const utilRouter= require('./routers/Utils')
 
 const cors=require('cors');
@@ -19,6 +20,7 @@ app.use(cors({origin :['http://localhost:3000']}))
 
 // middleware
 app.use('/user',userRouter);
+app.use('/file',fileRouter);
 app.use('/util',utilRouter);
 
 
