@@ -23,6 +23,7 @@ app.use('/user',userRouter);
 app.use('/file',fileRouter);
 app.use('/util',utilRouter);
 
+app.use(express.static('./static/uploads'))
 
 
 // to process request and to generate response - route
