@@ -77,7 +77,7 @@ const FileManager = () => {
         <h5 class="card-title">Card title</h5>
         <p class="card-text"> This content is a little bit longer.This is a longer card with supporting text below as a natural lead-in to additional content.</p>
      
-        <button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="dark">Add</button>
+        <button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="dark"  >Add</button>
         <button type="button" class="btn btn-outline-danger btn-rounded" data-mdb-ripple-color="dark">Delete</button> </div>
     </div>
   </div>

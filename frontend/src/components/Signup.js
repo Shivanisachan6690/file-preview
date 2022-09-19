@@ -29,7 +29,12 @@ const Signup = () => {
         <div className="row d-flex justify-content-center">
           <div className="col-lg-8">
             <h2 className="fw-bold mb-5">Sign up now</h2>
-            <form>
+            <Formik 
+                    initialValues={{name : '', email : '', password : '', age : ''}}
+                    onSubmit={userSubmit}>
+                        {({values, handleSubmit, handleChange}) => (
+                            <form onSubmit={handleSubmit}>
+           
               {/* 2 column grid layout with text inputs for the first and last names */}
               <div className="row">
                 <div className="col-md-6 mb-4">
@@ -124,7 +129,9 @@ const Signup = () => {
                   <i className="fab fa-github" />
                 </button>
               </div>
-            </form>
+              </form>
+                        )}
+                    </Formik>
           </div>
         </div>
       </div>
