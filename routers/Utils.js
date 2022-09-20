@@ -146,7 +146,7 @@ const generateVidPreview2 = (url) => {
  })
 
  router.get("/ret-vid-preview/:id", (req, res) => {
-  res.status(200).redirect("http://localhost:4000/previews/"+req.params.id+'_preview.gif');
+  res.status(200).redirect("https://preview6690.herokuapp.com/previews/"+req.params.id+'_preview.gif');
  })
 
  module.exports = router;
