@@ -16,6 +16,7 @@ const port=process.env.PORT || 5000;
 // middleware -process the request but does not generate request or response
 //  this will parse JSON data to javascript
 app.use(express.json());
+
 app.use(cors({origin :['http://localhost:3000']}))
 
 // middleware
